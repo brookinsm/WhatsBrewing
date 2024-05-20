@@ -3,15 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WhatsBrewing</title>
+    <title>What's Brewing?</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="container">
-        <h1>What's Brewing!</h1>
-        <input type="text" id="searchInput" placeholder="Search for a brewery...">
-        <button onclick="searchBreweries()">Search</button>
-        <div id="results"></div>
-    </div>
-    <script src="js/script.js"></script>
+        <h1>What's Brewing?</h1>
+        <h3>Search for a Brewery by Name, City, State, or Type</h3>
+        
+        <div class="container">
+    <select id="searchCriteria">
+        <option value="by_name">Brewery Name</option>
+        <option value="by_city">Brewery City</option>
+        <option value="by_state">BreweryState</option>
+        <option value="by_type">Brewery Type</option>
+    </select>
+
+    <input type="text" id="searchInput" placeholder="Please Enter Brewery Search Criteria">
+    <button id="searchButton">Search Breweries</button>
+    <div id="results"></div>
+
+    <script type="module">
+        import { searchBreweries } from './script.js';
+
+        document.getElementById('searchButton').addEventListener('click', async () => {
+            try {
+                await searchBreweries();
+                console.log('Search Successful');
+            } catch (error) {
+                console.error('Search Failed:', error);
+            }
+        });
+    </script>
 </body>
 </html>

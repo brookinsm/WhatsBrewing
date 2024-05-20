@@ -1,48 +1,43 @@
-@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Cabin&family=Dongle:wght@300&family=Prompt:wght@500&display=swap");
 
 body {
-    background-color: #000000, opacity 50%;
+    font-family: Arial, sans-serif;
+    background-color: #339cb6; 
+    margin: 0;
+    padding: 0;
 }
-
-h1 {
-    color: rgb(46, 49, 212);
-    font-size: 36px;
-    text-align: center;
-    font-family: "Cabin", sans-serif;
-    padding-bottom: 5%;
-  }
-
 .container {
-    max-width: 600px;
+    max-width: 800px;
     margin: 50px auto;
     text-align: center;
+    background-color: #91ff00;
+}
+
+select[id="searchCriteria"]  {
+    width: 25%;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
 input[type="text"] {
+    width: 50%;
     padding: 10px;
-    font-size: 14px;
-    border-radius: 5px;
-    border: none;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-    margin-bottom: 20px;
-    width: 300px;
+    margin-bottom: 10px;
 }
 
 button {
-    padding: 10px 20px;
-    background-color: rgb(46, 49, 212);
+    padding: 10px 10px;
+    background-color: #007bff;
     color: white;
-    border: black;
-    border-radius: 7px;
+    border: none;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: rgb(49, 212, 46);
+    background-color: #b300a4;
 }
 
 #results {
+    background-color: #c8ff00;
     margin-top: 20px;
     text-align: left;
 }
