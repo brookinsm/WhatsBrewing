@@ -48,7 +48,7 @@ async function searchBreweries() {
     } catch (error) {
         console.error('Error fetching data:', error);
         resultsDiv.innerHTML = '<p>Failed to fetch breweries. Please try again later.</p>';
-    }
+    };
 }
 
 //Listener to know when Search Breweries button is clicked console logging success or failue
