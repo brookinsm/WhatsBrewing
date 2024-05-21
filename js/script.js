@@ -30,6 +30,7 @@ async function searchBreweries() {
         breweries.forEach(brewery => {
             const li = document.createElement('li');
             li.innerHTML = `
+            <br>
                 <strong> Name: </strong> ${brewery.name}<br>
                 <strong> Address: </strong> ${brewery.address_1}<br>
                 <strong> City: </strong> ${brewery.city}<br>
@@ -37,7 +38,7 @@ async function searchBreweries() {
                 <strong> Phone: </strong> ${brewery.phone}<br>
                 <strong> Type: </strong> ${brewery.brewery_type}<br>
                 <strong> Website:  </strong> <a href="${brewery.website_url}" target="_blank">${brewery.website_url}<a><br>
-                <br></br>
+            </br>
             `;
             ul.appendChild(li);
         });
