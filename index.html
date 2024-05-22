@@ -10,7 +10,7 @@
     <div class="container">
         <h1>What's Brewing?</h1>
         <h3>Search for a Brewery by Name, City, State, or Type</h3>
-
+    <!--dropdown to call path of api (searchCriteria)-->
         <div class="container">
             <select id="searchCriteria">
                 <option value="by_name">Brewery Name</option>
@@ -18,13 +18,14 @@
                 <option value="by_state">Brewery State</option>
                 <option value="by_type">Brewery Type</option>
             </select>
-
+        <!--searchInput to query path of api-->
             <input type="text" id="searchInput" placeholder="Please Enter Brewery Search Criteria">
+        <!--Button to trigger call to api-->    
             <button id="searchButton">Search Breweries</button>
             <div id="results"></div>
         </div>
     </div>
-    
+
     <script type="module" src="js/script.js"></script>
 </body>
 </html>
