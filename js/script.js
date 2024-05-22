@@ -31,13 +31,13 @@ async function searchBreweries() {
             const li = document.createElement('li');
             li.innerHTML = `
             <br>
-                <strong> Name: </strong> ${brewery.name}<br>
-                <strong> Address: </strong> ${brewery.address_1}<br>
-                <strong> City: </strong> ${brewery.city}<br>
-                <strong> State: </strong> ${brewery.state}<br>
-                <strong> Phone: </strong> ${brewery.phone}<br>
-                <strong> Type: </strong> ${brewery.brewery_type}<br>
-                <strong> Website:  </strong> <a href="${brewery.website_url}" target="_blank">${brewery.website_url}<a><br>
+                <b> Name: </b> ${brewery.name}<br>
+                <b> Address: </b> ${brewery.address_1}<br>
+                <b> City: </b> ${brewery.city}<br>
+                <b> State: </b> ${brewery.state}<br>
+                <b> Phone: </b> ${brewery.phone}<br>
+                <b> Type: </b> ${brewery.brewery_type}<br>
+                <b> Website:  </b> <a href="${brewery.website_url}" target="_blank">${brewery.website_url}<a><br>
             </br>
             `;
             ul.appendChild(li);
