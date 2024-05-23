@@ -45,6 +45,7 @@ async function searchBreweries() {
         resultsDiv.appendChild(ul);
 
 //catch block is trigged if there is an error during fetching 
+        // to see example of fetch error select Brewery Type and capitalize input to throw error. 
     } catch (error) {
         console.error('Error fetching data:', error);
         resultsDiv.innerHTML = '<p>Failed to fetch breweries. Please try again later.</p>';
