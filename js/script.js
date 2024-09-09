@@ -51,12 +51,6 @@ async function searchBreweries() {
         resultsDiv.innerHTML = '<p>Failed to fetch breweries. Please try again later.</p>';
     };
 }
-    const footer = document.createElement('footer');
-        footer.style.textAlign = 'center';
-        footer.style.padding = '10px';
-        footer.style.backgroundColor = '#f1f1f1';
-        footer.innerHTML = '&copy; 2024 Catering By The Bay. All rights reserved.';
-        resultsDiv.appendChild(footer);
 
 //Listener to know when Search Breweries button is clicked console logging success or failue
 document.getElementById('searchButton').addEventListener('click', async () => {
