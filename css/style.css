@@ -51,9 +51,9 @@ ul {
 }
 
  footer {
-            text-align: center;
+            text-align: right;
             padding: 10px;
-            background-color: #f1f1f1;
+            background-color: red;
             position: fixed;
             width: 100%;
             bottom: 0;
